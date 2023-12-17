@@ -15,7 +15,7 @@ Project developed as part of a technical test, implementing a React frontend to 
 
 ## Demo
 
-[https://pokemon-full-stack-817g5mhhj-jascuas.vercel.app/](https://pokemon-full-stack-git-main-jascuas.vercel.app/)
+[https://pokemon-full-stack-git-main-jascuas.vercel.app/](https://pokemon-full-stack-git-main-jascuas.vercel.app/)
 
 ## Features
 
@@ -48,6 +48,7 @@ Explore the world of Pokémon with this Pokedex application, offering a rich use
    npm install
 
 2. Set the environment variable NEXT_PUBLIC_POKEAPI_URL in the .env file. This variable can be set to either the PokeAPI URL or the URL of the Node.js API. (always localhost:3000)
+   
    NEXT_PUBLIC_API_URL=https://api.pokeapi.com/v2/pokemon/
    # OR
    NEXT_PUBLIC_API_URL=http://localhost:3000/pokemon/
