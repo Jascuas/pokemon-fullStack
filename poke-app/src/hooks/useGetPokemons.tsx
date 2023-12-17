@@ -38,12 +38,14 @@ const useGetPokemons = () => {
     const fetchPokemonList = async () => {
       try {
         const listResponse = await fetch(apiUrl);
-        const listData = await listResponse.json();
 
-        const detailsPromises = listData.results.map(
+        const listData = await listResponse.json();
+        console.log(listData);
+        const detailsPromises = listData.results?.map(
           async (pokemon: Pokemon) => {
             const detailsResponse = await fetch(apiUrl + pokemon.name);
             const detailsData = await detailsResponse.json();
+
             const speciesResponse = await fetch(detailsData.species.url);
             const speciesData = await speciesResponse.json();
             const evolvesFromSpecies = speciesData.evolves_from_species
