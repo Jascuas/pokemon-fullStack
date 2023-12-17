@@ -39,21 +39,24 @@ Explore the world of Pokémon with this Pokedex application, offering a rich use
    npm install
    
 2. Start the server
+   ```bash
    npm run dev
 
 ### FrontEnd (React.js, Next.js)
 
 1. Navigate to the frontend directory and install dependencies.
+   ```bash
    cd poke-app
    npm install
 
-2. Set the environment variable NEXT_PUBLIC_POKEAPI_URL in the .env file. This variable can be set to either the PokeAPI URL or the URL of the Node.js API. (always localhost:3000)
-   
+3. Set the environment variable NEXT_PUBLIC_POKEAPI_URL in the .env file. This variable can be set to either the PokeAPI URL or the URL of the Node.js API. (always localhost:3000)
+   ```bash
    NEXT_PUBLIC_API_URL=https://api.pokeapi.com/v2/pokemon/
    # OR
    NEXT_PUBLIC_API_URL=http://localhost:3000/pokemon/
 
 4. Start the frontend
+   ```bash
    npm run dev
 
 Ensure that the backend is running before starting the frontend. Access the application at http://localhost:3001.
